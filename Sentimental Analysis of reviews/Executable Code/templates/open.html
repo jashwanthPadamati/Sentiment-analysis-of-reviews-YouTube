@@ -1,0 +1,77 @@
+<html>
+<style>
+  body {
+  padding-top: 80px;
+  text-align: center;
+  font-family: monaco, monospace;
+  background: url(i2.png) 20%;
+  background-size: cover;
+}
+h1, h2 {
+  display: inline-block;
+  background: ;
+  color:#f2f2f2;
+}
+h1 {
+  font-size: 35px;
+  font-family:"Comic Sans MS", cursive, sans-serif;
+  @-webkit-keyframes colorchange {
+  0% {
+    -webkit-text-stroke: 10px red;
+  }
+  100% {
+    -webkit-text-stroke: 20px black;
+  }
+}
+
+   color: white;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+  
+}
+h2 {
+  font-size: 30px;
+  font-family:Courier New, monospace;
+  -webkit-text-stroke: 1px black;
+   color: white;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+  
+  }
+  #d1 {
+  font-size: 30px;
+  font-family:Courier New, monospace;
+  -webkit-text-stroke: 1px black;
+   color: white;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+  
+  }
+  
+div{
+height:100%;
+width:70%;
+}
+</style>
+<body style="background-color:BDFC65">
+<div>
+<form method="POST" action="http://127.0.0.1:5000/res">
+<h1>Welcome to<br><span>Suggester</span></h1><br><br>
+<h2>A Sentiment Analysis of Reviews</h2><br>
+<span id="d1">Target URL:</span><input type="text" size="50" id="url" name="url"><br><br>
+<button style="color:brown" onclick="redirect()">Analyze</button>
+</div>
+</body>
+</html>
